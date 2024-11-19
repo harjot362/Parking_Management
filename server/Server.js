@@ -17,8 +17,8 @@ mongoose.connect('mongodb://localhost:27017/parking-management')
 
 // Use routes
 app.use('/api', routes); // General routes
-app.use('/api/userAccount', userAccountRoutes); // User account routes
-app.use('/api/parkingSpace', parkingSpaceRoutes); // Parking space routes
+app.use('/api/userAccount', userAccountRoutes); 
+app.use('/api/parkingSpace', parkingSpaceRoutes); 
 
 // Start the server
 const PORT = process.env.PORT || 4001;
